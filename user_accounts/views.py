@@ -6,3 +6,6 @@ def logout(request):
     auth.logout(request)
 
     return redirect('index')
+
+def test(request):
+    pass
