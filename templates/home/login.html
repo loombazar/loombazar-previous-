@@ -1,4 +1,5 @@
-{% extends 'home/base.html' %}{% block content %}{% load static %}
+ {% extends 'home/base.html' %}{% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'home/css/login.css' %}" type="text/css"> {% endblock %} {% block content %}
 <br>
 <br>
 <div class="container" style="border: 2px solid brown;" id="loginpage">
@@ -169,4 +170,8 @@
     <br>
 </div>
 <br>
-<br> {% endblock %}
+<br> {% endblock %} {% block javascript %}
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+<script src="{% static 'home/js/login_Validation.js' %}"></script>
+
+{% endblock %}
